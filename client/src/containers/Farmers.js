@@ -1,16 +1,16 @@
 import React, { Component } from 'react';
 import Navigation from '../components/Navigation.js'; 
-import '../css/Meats.css';
+import '../css/Farmers.css';
 
-class Meats extends Component {
+class Farmers extends Component {
   render() {
     return (
       <div>
         <Navigation />
-        <h1> This is the meats page! </h1>
+        <h1> This is the farmers page! </h1>
       </div>
     );
   }
 }
 
-export default Meats;
+export default Farmers;
