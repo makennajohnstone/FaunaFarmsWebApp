@@ -5,6 +5,7 @@ import { Link } from 'react-router-dom';
 import Meats from './containers/Meats.js';
 import Farmers from './containers/Farmers.js';
 import Home from './containers/Home.js';
+import StuffList from './containers/StuffList.js';
 
 import './css/App.css';
 

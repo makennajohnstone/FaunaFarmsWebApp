@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import Navigation from '../components/Navigation.js'; 
+import Navigation from '../components/Navigation.js';
 import '../css/Farmers.css';
 
 class Farmers extends Component {
