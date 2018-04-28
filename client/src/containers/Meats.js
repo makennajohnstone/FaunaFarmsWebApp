@@ -3,6 +3,7 @@ import Navigation from '../components/Navigation.js';
 import API from "../API.js"
 import lamb from "../img/lambLoinChops.jpg";
 import '../css/Meats.css';
+import meat1 from '../img/meat1.jpeg';
 
 class Meats extends Component {
   constructor(props) {
@@ -30,37 +31,29 @@ class Meats extends Component {
         <div class="container-fluid">
           <div class="row">
 
-            <div class= "col-sm-2">
-            </div>
 
 
-            <div class="col-sm-8 meats-container">
-              <h2>From our farms to your table. . . </h2>
-              <div class="card-container">
-                {this.state.meats.map(meat =>
-                    <div key={meat.name} class="card">
-                      <img class="card-img-top" src={lamb} />
-                      <div class="card-body">
-                        <h5 class="card-title"> {meat.name} </h5>
-                        <div class="container">
-
-                          <div class="row">
-                            <div class="col-sm-10 price-container">
-                               ${meat.price}
-                            </div>
-                            <div class="col-sm-2">
-                                <i class="fas fa-shopping-cart"></i>
-                            </div>
+            <div class="container-fluid">
+              {this.state.meats.map(meat =>
+                  <div key={meat.name} class="card">
+                    <img class="card-img-top" src={meat1} />
+                    <div class="card-body">
+                      <h5 class="card-title"> {meat.name} </h5>
+                      <div class="container">
+                        <div class="row">
+                          <div class="col-sm-10 price-container">
+                             ${meat.price}
+                          </div>
+                          <div class="col-sm-2">
+                              <i class="fas fa-shopping-cart"></i>
                           </div>
                         </div>
                       </div>
-                    </div>)}
-                  </div>
+                    </div>
+                  </div>)}
                 </div>
+              </div>
             </div>
-            <div class="col-sm-2">
-            </div>
-          </div>
         </div>
     );
   }
