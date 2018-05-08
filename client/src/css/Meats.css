@@ -1,0 +1,30 @@
+.container-fluid {
+  margin: auto;
+  width: 100%;
+  padding-left: 130px; 
+}
+
+.card-img-top {
+  width: 250px;
+  height: 200px;
+  padding-top: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.card {
+  margin: 50px;
+  display: inline-block;
+}
+
+.card-title {
+  font-family: 'IM Fell English', serif;
+}
+
+.price-container {
+  padding-left: 0px;
+}
+
+.fas .fa-shopping-cart {
+  padding-left: 20px;
+}
