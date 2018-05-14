@@ -30,19 +30,16 @@ class Meats extends Component {
         <Navigation />
         <div class="container-fluid">
           <div class="row">
-
-
-
             <div class="container-fluid">
               {this.state.meats.map(meat =>
                   <div key={meat.name} class="card">
-                    <img class="card-img-top" src={meat1} />
+                    <img class="card-img-top" src={meat.Picture} />
                     <div class="card-body">
-                      <h5 class="card-title"> {meat.name} </h5>
+                      <h5 class="card-title"> {meat.Name} </h5>
                       <div class="container">
                         <div class="row">
                           <div class="col-sm-10 price-container">
-                             ${meat.price}
+                             ${meat.Price}
                           </div>
                           <div class="col-sm-2">
                               <i class="fas fa-shopping-cart"></i>
