@@ -8,16 +8,6 @@ class API {
       "Content-Type": "application/json"
     }
   };
-
-  // getMeat = (callback) => {
-  //   axios.get(this.baseURL + "/meat")
-  //     .then((res) => {
-  //     callback(res["data"])
-  //   })
-  //   .catch((err) => {
-  //     console.log("Error fetching meat");
-  //   });
-  // };
 }
 
 export default API;
