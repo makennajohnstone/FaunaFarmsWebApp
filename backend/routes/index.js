@@ -31,45 +31,7 @@ router.get('/meats', function(req, res, next) {
       throw err;
     }
     res.json(JSON.parse(JSON.stringify(result)));
-    //console.log(result);
-    // Object.keys(result).forEach(function(key) {
-    //   var row = result[key];
-    //   //console.log(row);
-    //   console.log(row.name);
   });
 });
-
-  // res.json([{
-  //   name: "chicken thigh",
-  //   price: 20
-  // }, {
-  //   name: "chicken breast",
-  //   price: 30
-  // }, {
-  //   name: "drumsticks",
-  //   price: 40
-  // }, {
-  //   name: "chicken little",
-  //   price: 50
-  // }, {
-  //   name: "chicken little",
-  //   price: 50
-  // },
-  // {
-  //   name: "chicken little",
-  //   price: 50
-  // },
-  // {
-  //   name: "chicken little",
-  //   price: 50
-  // },
-  // {
-  //   name: "chicken little",
-  //   price: 50
-  // },
-  // {
-  //   name: "chicken little",
-  //   price: 50
-  // }]);
 
 module.exports = router;
