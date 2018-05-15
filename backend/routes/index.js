@@ -12,16 +12,10 @@ var connection = mysql.createConnection({
 
 connection.connect(function(err) {
   if (err) {
-    console.error('error connecting: ' + err.stack);
+    console.error('error connecting to database: ' + err.stack);
     return;
   }
-
-  console.log('connected as id ' + connection.threadId);
-});
-
-/* GET home page. */
-router.get('/', function(req, res, next) {
-  res.render('index', { title: 'Express' });
+  console.log('database connected as id ' + connection.threadId);
 });
 
 /* Load meats for the meats page. */
