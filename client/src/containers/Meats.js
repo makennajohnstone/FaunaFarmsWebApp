@@ -1,9 +1,7 @@
 import React, { Component } from 'react';
 import Navigation from '../components/Navigation.js';
 import API from "../API.js"
-import lamb from "../img/lambLoinChops.jpg";
 import '../css/Meats.css';
-import meat1 from '../img/meat1.jpeg';
 
 class Meats extends Component {
   constructor(props) {
