@@ -10,7 +10,6 @@ class Meats extends Component {
       meats: [],
       colIdx: 0
     };
-    this.addItemToCart = this.addItemToCart.bind(this);
   }
 
   // componentDidMount() {
@@ -29,7 +28,7 @@ class Meats extends Component {
         <div class="container-fluid">
           <div class="row">
             <div class="container-fluid">
-              {this.state.meats.map(meat =>
+              {this.props.meats.map(meat =>
                   <div key={meat.name} class="card">
                     <img class="card-img-top" src={meat.Picture} />
                     <div class="card-body">
