@@ -14,5 +14,8 @@ export function loadMeats() {
 }
 
 export function loadMeatsSuccess(meats) {
-  return {type : types.LOAD_MEATS_SUCCESS, meats};
+  return {
+    type : types.LOAD_MEATS_SUCCESS,
+    meats : meats
+  };
 }

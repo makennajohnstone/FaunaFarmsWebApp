@@ -13,11 +13,11 @@ class Meats extends Component {
     this.addItemToCart = this.addItemToCart.bind(this);
   }
 
-  componentDidMount() {
-    fetch('/meats')
-      .then(res => res.json())
-      .then(meats => this.setState({ meats }));
-  }
+  // componentDidMount() {
+  //   fetch('/meats')
+  //     .then(res => res.json())
+  //     .then(meats => this.setState({ meats }));
+  // }
 
   addItemToCart() {
   }
