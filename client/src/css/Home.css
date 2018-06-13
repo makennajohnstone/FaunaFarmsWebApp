@@ -1,10 +1,25 @@
- h2 {
+@import url('https://fonts.googleapis.com/css?family=IM+Fell+English');
+
+ .text {
+   padding-top: 30px;
    font-family: 'IM Fell English', serif;
    font-size: 20px;
+   text-align: center;
  }
 
-/* .container .img {
-  padding-top: 150px;
-  width: 50px;
-  height: 50px;
-} */
+.hills-img-container {
+  padding-top: 50px;
+  text-align: center;
+  border-bottom: 1px solid black;
+}
+
+.hills-img {
+  width: 500px;
+  height: 200px;
+  padding-bottom: 50px;
+}
+
+.cows-img-container {
+  padding-top: 50px;
+  text-align: center;
+}

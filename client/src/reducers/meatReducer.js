@@ -8,11 +8,11 @@ import initialState from './initialState';
 //Our reducer should return a brand-new object, with copies of any objects it needs
 //from the previous state and NEVER alter the previous state.
 export default function meatReducer(state = initialState.meats, action) {
-
   switch(action.type) {
-    console.log("in meat reducer"); 
     case types.LOAD_MEATS_SUCCESS:
       return action.meats
+    case types.ADD_TO_CART_SUCCESS:
+        return state
     default:
       return state;
   }

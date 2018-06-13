@@ -5,44 +5,49 @@
   width: 100%;
   background-color: #849479;
   margin-bottom: 0px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 50px 50px 100px;
 }
 
 .link-container {
   padding-top: 20px;
   padding-bottom: 20px;
   margin: auto;
+  grid-row: 3/4;
+  grid-column: 1/4;
 }
 
-a {
+.nav-links {
   color: #ffff;
   font-family: 'IM Fell English', serif;
   margin: 100px;
   font-size: 15px;
 }
-
-.cow {
-  width: 150px;
-  height: 100px;
-}
-
-.links {
-  padding-top: 20px;
-  position: absolute;
-  left: 50%;
-  right: 50%;
-}
-
-.logo {
+#title {
+  margin-bottom: 0px;
+  grid-row: 1/2;
+  grid-column: 2/3;
+  text-align: center;
   color: #ffff;
   font-family: 'IM Fell English', serif;
-  text-align: center;
-  width: 100%;
-}
-
-.logo .title {
   font-size: 40px;
 }
+#cart-link {
+  grid-row: 1/2;
+  grid-column: 3/4;
+  text-align: right;
+  margin-right: 15px;
+  color: #ffff;
+  font-family: 'IM Fell English', serif;
+  font-size: 15px;
+}
 
-.logo .subtitle {
-  font-size: 20px;
+#meat-stuff {
+  grid-row: 2/3;
+  grid-column: 2/3;
+  text-align: center;
+  color: #ffff;
+  font-family: 'IM Fell English', serif;
+  font-size: 30px;
 }

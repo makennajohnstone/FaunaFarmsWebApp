@@ -4,7 +4,6 @@ CREATE TABLE farmers(
    PRIMARY KEY(First,Last)
 );
 
-
 CREATE TABLE AnimalsBought(
    Id INTEGER PRIMARY KEY,
    Price INTEGER,

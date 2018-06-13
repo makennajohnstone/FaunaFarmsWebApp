@@ -1,7 +1,7 @@
 .container-fluid {
   margin: auto;
   width: 100%;
-  padding-left: 130px; 
+  padding-left: 130px;
 }
 
 .card-img-top {
@@ -27,4 +27,8 @@
 
 .fas .fa-shopping-cart {
   padding-left: 20px;
+}
+
+.fa-shopping-cart {
+  cursor: pointer;
 }

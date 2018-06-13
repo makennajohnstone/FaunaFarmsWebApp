@@ -1,13 +1,16 @@
 import React from 'react';
-import ReactDom from 'react-dom';
+import { render } from 'react-dom'
 import { Provider } from 'react-redux';
 import configureStore from './store/configureStore';
 import App from './App.js';
-//import registerServiceWorker from './registerServiceWorker';
+import { loadMeats } from './actions/MeatActions';
 
 const store = configureStore();
 
-ReactDom.render(
+store.dispatch(loadMeats());
+
+
+render(
   <Provider store={store}>
     <App />
   </Provider>,

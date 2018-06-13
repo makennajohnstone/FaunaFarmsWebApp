@@ -1,56 +1,42 @@
 import React, { Component } from 'react';
+import PropTypes from 'prop-types';
+import { connect } from 'react-redux';
 import Navigation from '../components/Navigation.js';
-import API from "../API.js"
+import MeatCards from '../components/MeatCards';
 import '../css/Meats.css';
 
 class Meats extends Component {
   constructor(props) {
     super(props);
-    this.state = {
-      meats: [],
-      colIdx: 0
-    };
-  }
-
-  // componentDidMount() {
-  //   fetch('/meats')
-  //     .then(res => res.json())
-  //     .then(meats => this.setState({ meats }));
-  // }
-
-  addItemToCart() {
   }
 
   render() {
     return (
       <div>
         <Navigation />
-        <div class="container-fluid">
-          <div class="row">
-            <div class="container-fluid">
-              {this.props.meats.map(meat =>
-                  <div key={meat.name} class="card">
-                    <img class="card-img-top" src={meat.Picture} />
-                    <div class="card-body">
-                      <h5 class="card-title"> {meat.Name} </h5>
-                      <div class="container">
-                        <div class="row">
-                          <div class="col-sm-10 price-container">
-                             ${meat.Price}
-                          </div>
-                          <div class="col-sm-2">
-                              <i class="fas fa-shopping-cart"></i>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>)}
-                </div>
-              </div>
-            </div>
-        </div>
+        <MeatCards meats={this.props.meats} store={this.props}/>
+      </div>
     );
   }
 }
 
-export default Meats;
+//ensure that the cats property of our component is an array
+Meats.propTypes = {
+  meats: PropTypes.array.isRequired
+};
+//recieve application state from the store whenever state has changed and make
+//data available to the component as props.
+
+function mapStateToProps(state, ownProps) {
+  //grab the meats from the state
+  //should return a new object, the key/value pairs of which will be become available as
+  //props and their values in our componenet.
+  return {
+    meats: state.meats
+  }
+}
+
+//subscribes our container component to the store.
+//It will be alerted when the state changes
+//only container or "stateful" components will be connected to the store.
+export default connect(mapStateToProps)(Meats);
